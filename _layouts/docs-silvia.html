@@ -1,0 +1,19 @@
+---
+layout: docs
+--- 
+<aside class="o-grid-sidebar c-main-content__docs-sidebar c-docs-sidebar">
+    <nav class="c-docs-nav" role="navigation" aria-label="navigation">
+      <ul class="c-docs-menu" role="menu" aria-label="navigation menu">
+        {% for item in site.menu %}
+            <li class="c-docs-menu__item" role="menuitem"><a class="c-docs-menu__item-link" href="{{ item.url }}" role="menuitem" aria-label="{{ item.title | escape }}">{{ item.title | escape }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+</aside>
+<div class="o-grid-page c-main-content__page c-docs-content">
+    <article class="c-page">
+      <section class="c-page-content">
+          {{ content }}
+      </section>
+    </article>
+</div>

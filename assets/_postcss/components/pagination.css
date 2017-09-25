@@ -1,0 +1,23 @@
+.c-pagination {
+    display: flex;
+    margin-bottom: 3em;
+}
+.c-pagination__page-number,
+.c-pagination__newer-posts,
+.c-pagination__older-posts {
+     padding: 0.5em 1em;
+}
+.c-pagination__page-number {
+    display: block;
+    margin: 0 auto;
+}
+.c-pagination__newer-posts,
+.c-pagination__older-posts {
+    color: var(--midgrey);
+    border: 1px solid var(--lightgrey);
+    
+    &:hover {
+        text-decoration: none;
+        border-color: var(--midgrey);
+    }
+}

@@ -1,0 +1,39 @@
+.c-main-content__docs-sidebar {
+    position: relative;
+}
+.c-docs-sidebar {
+    position: relative;
+    min-height: 1px;
+}
+.c-docs-menu {
+    list-style: none;
+}
+.c-docs-menu__item:hover,
+.c-docs-menu__item:active {
+    border-left: 1px solid var(--link-color);
+}
+.c-docs-menu__item-link {
+    color: var(--secondary-text-color);
+    
+    &:hover {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+}
+
+@media (--large-screen) {
+    .fixed {
+        position: fixed;
+        top: 0;
+        padding-top: 2em;
+    }
+}
+@media (--medium-screen) {
+    .c-docs-menu__item {
+        text-align: center;
+    }
+    .c-docs-menu__item:hover,
+    .c-docs-menu__item:active {
+        border-left: none;
+    }
+}

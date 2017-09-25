@@ -1,0 +1,3 @@
+{% for item in site.menu %}
+            <li role="menuitem"><a href="{{ item.url | relative_url }}" role="menuitem" aria-label="{{ item.title | escape }}">{{ item.title | escape }}</a></li>
+            {% endfor %}

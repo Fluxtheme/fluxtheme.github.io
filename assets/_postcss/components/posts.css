@@ -1,0 +1,9 @@
+.highlighter-rouge {
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+@media (--medium-screen) {
+    .c-docs-content {
+        padding: 1em 2em;
+    }
+}

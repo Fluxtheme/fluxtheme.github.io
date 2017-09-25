@@ -1,0 +1,108 @@
+.c-single-post {
+    padding: 0 1.5em;
+}
+.c-single-post__title {
+    text-transform: capitalize;
+    font-size: 3rem;
+    text-align: center;
+}
+.c-single-post__meta {
+    margin-bottom: 2em;
+    text-align: center;
+}
+.c-single-post__meta-item {
+    margin-right: 10px;  
+}
+.c-single-post__author-image {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50rem;
+}
+.c-single-post__author-name a {
+    text-transform: uppercase;
+    color: var(--midgrey);
+}
+.c-single-post__published {
+    color: var(--midgrey);
+    font-style: italic;
+}
+.c-single-post__image {
+    max-width: 100%;
+    height: auto;
+}
+.c-single-post__content {
+    padding-top: 2em;
+    font-size: 1.7rem;
+    line-height: 1.7em;
+    
+    & img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    & hr {
+        margin-bottom: 1em;
+    }
+}
+.c-post-footer {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px dashed var(--lightgrey);
+}
+.c-post-footer__tags-link {
+    color: var(--midgrey);
+    text-transform: uppercase;
+}
+.c-social-share {
+    display: flex;
+}
+.c-social-share__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--midgrey);
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 1px solid var(--lightgrey);
+    margin-left: 10px;
+    
+    &:hover {
+        text-decoration: none;
+        border: 1px solid var(--midgrey);
+    }
+}
+.c-author-card {
+    display: flex;
+    border: 1px solid var(--lightgrey);
+    padding: 2em;
+    margin-bottom: 3em;
+}
+.c-author-card__profile-image {
+    width: 8em;
+    height: 8em;
+    border-radius: 50em;
+    margin-right: 2em;
+}
+.c-author-card__name {
+    margin: 0 0 1em;
+    text-transform: uppercase;
+}
+.c-author-card__name-link {
+    color: var(--midgrey);
+    font-weight: 700;
+}
+
+.c-read-next {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.c-prev-post,
+.c-next-post {
+    padding: 0.5em 1em;
+    border: 1px solid var(--lightgrey);
+    color: var(--midgrey);
+}

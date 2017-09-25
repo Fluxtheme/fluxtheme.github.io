@@ -1,0 +1,9 @@
+.o-media  {
+    display: flex;
+}
+.o-media__figure {
+    max-width: 100%;
+}
+.c-widget-media__image {
+    width: 30%;
+}

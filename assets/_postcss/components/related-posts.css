@@ -1,0 +1,21 @@
+.c-related-posts__title {
+    margin-bottom: 1em;
+    text-align: center;
+}
+.c-related-posts__image {
+    width: 100%;
+    height: 9em;
+}
+.c-related-posts__title-link {
+    font-family: var(--font-heading);
+    color: var(--midgrey);
+    text-transform: uppercase;
+    
+    &:hover {
+        text-decoration: none;
+        color: var(--darkgrey);
+    }
+}
+.c-related-posts__body-title {
+    margin-top: 1em;
+}

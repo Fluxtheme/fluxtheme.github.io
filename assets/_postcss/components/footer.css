@@ -1,0 +1,19 @@
+.c-footer {
+    border-top: 1px solid var(--border-color);
+    padding: 1.5em;
+    margin-top: 2em;
+    text-align: center;
+}
+.c-footer-copyright {
+    color: var(--secondary-text-color);
+}
+.c-footer-credit {
+    text-transform: capitalize;
+    
+    & a {
+        color: color(var(--link-color) blackness(40%));
+    }
+}
+.icon-heart {
+    color: crimson;
+}
