@@ -6,7 +6,7 @@ permalink: /docs/calina-ghost/
 ---
 
 
-## Introduction
+## Introductionku
 
 First of all, Thank you so much for purchasing this theme and for being my loyal customer. You are awesome! 
 You are entitled to get free lifetime updates to this product + exceptional support from the author directly.
