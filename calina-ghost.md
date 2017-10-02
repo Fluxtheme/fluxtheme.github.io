@@ -1,5 +1,5 @@
 ---
-layout: docs-silvia
+layout: docs-calina
 title: Calina Ghost Theme
 description: Theme Documentation | Current Version 1.0.0 - 26 August 2017
 permalink: /docs/calina-ghost/
