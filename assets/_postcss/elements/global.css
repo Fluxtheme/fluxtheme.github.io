@@ -36,7 +36,12 @@ hr {
     padding: 0;
     height: 1px;
     border: 0;
-    border-top: 1px solid color(var(--border-color) l(+10%));
+    border-top: 1px solid var(--border-color);
+}
+
+code {
+    color: royalblue;
+    background-color: lavender;
 }
 
 audio,
@@ -46,6 +51,14 @@ img,
 svg,
 video {
     vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    margin-bottom: 1.2em;
 }
 
 fieldset {
@@ -110,14 +123,13 @@ dd {
 blockquote {
     margin: 1.5em 0;
     padding: 0.25em 1.6em;
-    border-left: 2px solid var(--primary-color);
-    background: color(var(--body-background) blackness(5%));
+    border-left: var(--border-color) 0.3em solid;
+    background: color(var(--main-background) blackness(2%));
 }
 
 blockquote p {
     margin: 0.8em 0;
-    font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 300;
 }
 
@@ -138,12 +150,6 @@ blockquote cite {
 blockquote cite a {
     font-weight: normal;
 }
-code {
-    color: var(--code-text-color);
-    background: var(--code-background);
-    padding: 1px 6px;
-    border-radius: 2px;
-}
 
 a {
     color: color(var(--link-color) l(-5%));
@@ -162,56 +168,90 @@ h5,
 h6 {
     margin-top: 0;
     font-family: var(--font-heading);
+    color: var(--primary-text-color);
     line-height: 1.15;
     font-weight: 700;
     text-rendering: optimizeLegibility;
 }
 
 h1 {
-    margin: 0 0 0.5em;
-    font-size: 5rem;
-    font-weight: 700;
+    margin: 0 0 1em;
+    font-size: 3.2rem;
 }
-@media (max-width: 500px) {
+@media (--extra-small-screen) {
     h1 {
         font-size: 2.2rem;
     }
 }
 
 h2 {
-    margin: 0 0 0.5em;
-    font-size: 3.25rem;
+    margin: 0 0 1em;
+    font-size: 2.5rem;
 }
-@media (max-width: 500px) {
+@media (--extra-small-screen) {
     h2 {
         font-size: 2rem;
     }
 }
 
 h3 {
-    margin: 0 0 0.5em;
-    font-size: 2rem;
+    margin: 0 0 1em;
+    font-size: 2.2rem;
+    font-weight: 500;
 }
-@media (max-width: 500px) {
+@media (--extra-small-screen) {
     h3 {
         font-size: 1.8rem;
     }
 }
 
 h4 {
-    margin: 0 0 0.5em;
-    font-size: 1.6rem;
+    margin: 0 0 1em;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
 h5 {
-    margin: 0 0 0.5em;
-    font-size: 1.4rem;
+    margin: 0 0 1em;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
 h6 {
-    margin: 0 0 0.5em;
+    margin: 0 0 1em;
     font-size: 1.4rem;
     font-weight: 500;
 }
+
+table {
+    border-collapse: separate;
+    border-spacing: 1px 1px;
+    background: color(var(--main-background) blackness(7%));
+    width: 100%;
+    margin-bottom: 1.5em;
+    
+    & td,
+    & th {
+        padding: 0.5em 1em;
+    }
+}
+
+table th {
+	  background: color(var(--main-background) blackness(7%));
+}
+
+table td:hover {
+  background: color(var(--main-background) blackness(6%));
+  color: color(var(--primary-text-color) lightness(32%));
+}
+
+/* Background-color of the odd rows */
+table tr:nth-child(odd) {
+	  background: color(var(--main-background) blackness(2%));
+}
+
+/* Background-color of the even rows */
+table tr:nth-child(even) {
+	  background: color(var(--main-background) blackness(4%));
+}
+

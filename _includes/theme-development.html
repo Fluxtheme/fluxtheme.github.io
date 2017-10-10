@@ -1,0 +1,22 @@
+
+{% assign gs-docs = site.docs | sort: 'order' %}
+
+{% for doc in gs-docs %}
+
+{% if doc.type == "theme-dev" %}
+  <article class="c-docs-article" id="{{ doc.nav }}">
+    <h2>{{ doc.title }}</h2>
+    {% if doc.description %}
+      <p>{{ doc.description }}</p>
+    {% endif %}
+    {% if doc.ghost-docs %}
+      {{ doc.content }}
+    {% endif %}
+    <div class="c-docs-anchors">
+    <a class="back-to-top" href="#introduction">Back to Top</a>
+    </div>
+  </article>
+{% endif %}
+
+
+{% endfor %}

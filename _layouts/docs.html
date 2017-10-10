@@ -13,28 +13,28 @@
           </header>
           <main id="site-main" class="o-site-main o-container">
               <div class="o-grid-wrapper c-main-content">
-                 {{ content }}
+                 {% include docs-ghost.html %}
               </div>
           </main>
-          
+
         <footer class="o-site-footer c-footer">
             <div class="c-footer-content o-container">
-                <section class="c-footer-copyright">© 2017 | <span class="c-footer-credit">Created with <i class="icon-heart"></i> by <a href="https://fluxtheme.com">Fluxtheme</a> </span> </section>
+                <section class="c-footer-copyright">© 2017 | <span class="c-footer-credit">Created with <i class="icon-heart-1"></i> by <a href="https://fluxtheme.com">Fluxtheme</a> </span> </section>
             </div>
         </footer>
       </div>
 
- 
+
     <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}" type="text/javascript"></script>
     <script src="{{ "/assets/js/jquery-3.2.1.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
     <script src="{{ "/assets/js/highlight.pack.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-    
+
     <script>hljs.initHighlightingOnLoad();</script>
-    
+
     <script>
     $(function() {
          $(window).bind('scroll', function() {
-            var docsHeight = $( window ).height() - 244;
+            var docsHeight = $( window ).height() - 314;
             if ($(window).scrollTop() > docsHeight) {
                 $('.c-docs-nav').addClass('fixed');
             }
@@ -44,8 +44,8 @@
         });
     });
     </script>
-  
-    
+
+
   </body>
 
 </html>

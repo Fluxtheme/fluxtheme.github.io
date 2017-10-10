@@ -1,0 +1,44 @@
+
+<aside class="o-grid-sidebar c-main-content__docs-sidebar c-docs-sidebar">
+    <nav class="c-docs-nav" role="navigation" aria-label="navigation">
+      <ul class="c-docs-menu" role="menu" aria-label="navigation menu">
+
+        {% assign gs-docs = site.docs | sort: 'order' %}
+
+        {% for doc in gs-docs %}
+          {% if doc.type == "ghost-docs" %}
+            <li class="c-docs-menu__item" role="menuitem"><a class="c-docs-menu__item-link" href="#{{ doc.nav }}" role="menuitem">{{ doc.title }}</a></li>
+          {% endif %}
+          {% if doc.type == "instagram" %}
+            {% if page.instagram %}
+                 <li class="c-docs-menu__item" role="menuitem"><a class="c-docs-menu__item-link" href="#{{ doc.nav }}" role="menuitem">{{ doc.title }}</a></li>
+             {% endif %}
+
+          {% endif %}
+          {% if doc.type == "facebook" %}
+          {% if page.facebook-page %}
+               <li class="c-docs-menu__item" role="menuitem"><a class="c-docs-menu__item-link" href="#{{ doc.nav }}" role="menuitem">{{ doc.title }}</a></li>
+           {% endif %}
+
+        {% endif %}
+
+        {% if doc.type == "theme-dev" %}
+
+             <li class="c-docs-menu__item" role="menuitem"><a class="c-docs-menu__item-link" href="#{{ doc.nav }}" role="menuitem">{{ doc.title }}</a></li>
+       
+
+      {% endif %}
+          
+        {% endfor %}
+
+      </ul>
+    </nav>
+</aside>
+<div class="o-grid-page c-main-content__page c-docs-content">
+    <section class="c-docs-section">
+
+{{ content }}
+
+
+    </section>
+</div>

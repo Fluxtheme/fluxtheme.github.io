@@ -1,0 +1,61 @@
+.c-subscribe {
+    background: var(--main-background);
+    border-top: 1px solid var(--border-color);
+}
+.c-subscribe-content {
+    display: flex;
+    height: 8em;
+    justify-content: space-around;
+    align-items: center;
+    
+    & form {
+        display: flex;
+        
+        & button {
+            color: var(--light-text-color);
+            background: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            padding: 0 1.2em;
+            
+            &:active {
+                background: color(var(--primary-color) lightness(55%));
+            }
+        }
+    }
+}
+.c-subscribe-title {
+    margin: 0;
+}
+.subscribe-email {
+    background: var(--body-background);
+    border: none;
+    outline: none;
+    line-height: 4.2rem;
+    padding: 0 2em;
+    border: 1px solid var(--border-color);
+}
+@media (--small-screen) {
+    .c-subscribe-content {
+        flex-direction: column;
+        height: auto;
+        padding: 3em 1.6em;
+        
+        & form {
+            width: 97%;
+        
+            & button {
+                padding: 0 0.8em;
+
+                &:active {
+                    background: color(var(--primary-color) lightness(55%));
+                }
+            }
+        }
+    }
+    .c-subscribe-title {
+        margin-bottom: 1em;
+    }
+    .subscribe-email {
+        padding: 0 0 0 1em;
+    }
+}

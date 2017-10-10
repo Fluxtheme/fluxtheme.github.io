@@ -1,59 +1,51 @@
 {
-  "name": "fluxtheme",
-  "version": "0.6.1",
-  "description": "Jekyll starter project including full setup for gulp, Webpack, Sass, Autoprefixer, Bourbon/Neat/Bitters, imagemin, Browsersync, PostCSS etc.",
-  "main": "gulpfile.js",
-  "scripts": {
-    "preinstall": "bundle install",
-    "start": "gulp",
-    "test": "gulp test",
-    "build": "gulp build --production",
-    "imagemin": "gulp imagemin",
-    "production": "gulp --production",
-    "server": "gulp server",
-    "server-production": "gulp server --production"
+  "name": "nettren",
+  "description": "Beautiful, minimal and responsive Ghost theme for passionate blogging.",
+  "demo": "https://demo.ghost.io",
+  "version": "1.0.0",
+  "engines": {
+    "ghost": ">=1.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fluxtheme/fluxtheme.git"
+  "license": "MIT",
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.jpg",
+    "mobile": "assets/screenshot-mobile.jpg"
+  },
+  "author": {
+    "name": "Fluxthemes",
+    "email": "hello@ghost.org",
+    "url": "https://ghost.org"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Magazine"
+    ]
   },
   "keywords": [
-    "Autoprefixer",
-    "Browsersync",
-    "gulp",
-    "imagemin",
-    "Jekyll",
-    "CSSNext",
-    "PostCSS",
-    "LostGrid",
-    "Webpack"
+    "ghost",
+    "theme"
   ],
-  "author": "Fluxtheme",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fluxtheme/fluxtheme/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TryGhost/Casper.git"
   },
-  "homepage": "https://fluxtheme.github.io",
+  "bugs": "https://github.com/TryGhost/Casper/issues",
+  "contributors": "https://github.com/TryGhost/Casper/graphs/contributors",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
-    "eslint-config-google": "^0.9.1",
     "gulp": "^3.9.1",
-    "gulp-eslint": "^4.0.0",
-    "gulp-imagemin": "^3.3.0",
-    "gulp-newer": "^1.3.0",
-    "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",
     "gulp-sourcemaps": "^1.12.0",
-    "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.11",
-    "imagemin-pngquant": "^5.0.1",
     "lost": "^8.2.0",
     "postcss-cssnext": "^3.0.2",
-    "postcss-import": "^10.0.0",
-    "vinyl-named": "^1.1.0",
-    "webpack-stream": "^3.2.0",
-    "yargs": "^8.0.2"
+    "postcss-import": "^10.0.0"
+  },
+  "config": {
+    "posts_per_page": 8
   }
 }

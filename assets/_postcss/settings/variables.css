@@ -1,29 +1,26 @@
 /* Variables
 /* ---------------------------------------------------------- */
 
-/*@import url(https://fonts.googleapis.com/css?family=Lora|Raleway);*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|Raleway);
 
 
 :root {
     /* Colours */
-    --primary-color: hsl(0, 0%, 6.7%);
-    --primary-text-color: hsl(0, 0%, 6.7%);
-    --hovered-text-color: hsla(0, 0%, 6.7%, .8);
+    --primary-color: hsl(0, 0%, 7%);
+    --primary-text-color: hsl(0, 0%, 7%);
+    --hovered-text-color: hsla(0, 0%, 7%, .8);
     --secondary-text-color: hsl(198, 13%, 52%);
     --light-text-color: hsl(0, 0%, 100%);
     --expand-color: hsla(0, 0%, 6.7%, .6);
     --main-background: hsl(0, 0%, 100%);
-    --body-background: hsl(0, 0%, 98%);
+    --body-background: hsl(0, 0%, 95%);
     --nav-background: hsl(0, 0%, 98%);
     --hovered-nav-background: hsl(0, 0%, 95%);
-    --border-color: hsl(0, 0%, 86%);
+    --border-color: hsl(0, 0%, 86.2%);
     --black-shadow: 0px 4px 8px -3px rgba(17, 17, 17, .06);
     --link-color: hsl(201, 85%, 59%);
     --hovered-link-color: hsl(201, 85%, 59%);
     --meta-background: hsl(40, 32%, 62%);
-    --code-text-color: #6f42c1;
-    --code-background: hsl(0, 0%, 92%);
     
     --blue: #3eb0ef;
     --green: #a4d037;
@@ -41,16 +38,16 @@
     --midbrown: #BDA87F;
     --lightbrown: #E6C55D;
     
-    --font-body: 'Open sans', serif;
+    --font-body: 'Lora', serif;
     --font-heading: 'Raleway', sans-serif;
 }
 
 
 /* Custom media queries*/
 
-@custom-media --small-screen (max-width: 700px);
-@custom-media --medium (max-width: 900px);
-@custom-media --medium-screen (max-width: 900px);
-@custom-media --only-medium-screen (width >= 700px) and (width <= 900px);
-@custom-media --only-large-screen (width >= 900px) and (width <= 1050px);
-@custom-media --large-screen (min-width: 900px);
+@custom-media --extra-small-screen (max-width: 31.250em);
+@custom-media --small-screen (max-width: 43.750em);
+@custom-media --medium-screen (max-width: 56.250em);
+@custom-media --only-medium-screen (width >= 43.750em) and (width <= 56.250em);
+@custom-media --large-screen (min-width: 56.250em);
+@custom-media --only-large-screen (width >= 56.250em) and (width <= 65.625em);

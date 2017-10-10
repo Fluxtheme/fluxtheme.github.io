@@ -1,8 +1,23 @@
-.o-grid-wrapper {
-   margin: 0 auto;
-    max-width: 1170 px;
+.o-container {
+    margin: 0 auto;
+    max-width: 1040px;
     width: 100%;
 }
-.o-site-header {
-    
+.o-grid-wrapper {
+    lost-utility: clearfix;
+}
+.o-grid-sidebar {
+    lost-column: 1/4;
+}
+.o-grid-page {
+    lost-column: 3/4;
+}
+
+@media (--medium-screen) {
+    .o-grid-sidebar {
+        width: 100%;
+    }
+    .o-grid-page {
+        width: 100%;
+    }
 }

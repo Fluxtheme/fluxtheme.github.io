@@ -9,11 +9,11 @@
 }
 .c-footer-credit {
     text-transform: capitalize;
-    
+
     & a {
         color: color(var(--link-color) blackness(40%));
     }
 }
-.icon-heart {
+.icon-heart-1 {
     color: crimson;
 }

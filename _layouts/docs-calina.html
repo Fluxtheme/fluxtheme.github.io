@@ -4,7 +4,14 @@ layout: docs
 <aside class="o-grid-sidebar c-main-content__docs-sidebar c-docs-sidebar">
     <nav class="c-docs-nav" role="navigation" aria-label="navigation">
       <ul class="c-docs-menu" role="menu" aria-label="navigation menu">
-          {% for item in site.calina-docs %}
+        {% for item in site.calina-docs %}
+            <li class="c-docs-menu__item" role="menuitem"><a class="c-docs-menu__item-link" href="{{ item.url }}" role="menuitem" aria-label="{{ item.title | escape }}">{{ item.title | escape }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <nav class="c-docs-nav" role="navigation" aria-label="navigation">
+      <ul class="c-docs-menu" role="menu" aria-label="navigation menu">
+        {% for item in page.calina-docs %}
             <li class="c-docs-menu__item" role="menuitem"><a class="c-docs-menu__item-link" href="{{ item.url }}" role="menuitem" aria-label="{{ item.title | escape }}">{{ item.title | escape }}</a></li>
         {% endfor %}
       </ul>

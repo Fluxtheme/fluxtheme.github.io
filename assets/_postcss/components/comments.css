@@ -1,0 +1,10 @@
+#disqus_thread {
+    padding: 0 3em 2em;
+}
+
+/*Small Screen*/
+@media (--small-screen) {
+    #disqus_thread {
+    padding: 0 2em 2em;
+    }
+}

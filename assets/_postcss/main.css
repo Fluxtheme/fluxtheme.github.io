@@ -9,138 +9,93 @@ production stylesheet in assets/built/screen.css
 3.  Site Header
 4.  Site Navigation
 5.  Post Feed
-6.  Single Post
-  6.1. Subscribe Form
-  6.2. Post Footer
-  6.3. Comments
-  6.4. Related Posts
-  6.5. Floating Header
-7.  Sidebar Template
-8.  Author Template
-9.  Error Template
-10. Site Footer
+6.  Subscribe Form
+7.  Single Post
+  7.1. Post Footer
+  7.2. Related Posts
+  7.3. Comments
+8.  Sidebar Template
+9.  Author Template
+10. Error Template
+11. Site Footer
 
 */
 
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
 
-/*SETTINGS*/
 @import "settings/variables.css";
-
-/*TOOLS*/
-/*@import "tools/clearfix.css";*/
-/*@import "tools/typography.css";*/
-
-/*GENERIC*/
 @import "generic/box-sizing.css";
 @import "generic/normalize.css";
 @import "generic/reset.css";
-
-/*ELEMENTS*/
-/*@import "elements/links.css";*/
-/*@import "elements/headings.css";*/
-@import "elements/images.css";
-@import "elements/page.css";
-/*@import "elements/tables.css";*/
+@import "elements/global.css";
 
 
 /* 2. Layout - Page building blocks
 /* ---------------------------------------------------------- */
 
-/*OBJECTS*/
-/*@import "objects/objects.css";*/
-/*/@import "objects/layout.css";*/
-@import "objects/grid.css";
-/*@import "objects/media.css";*/
-
+@import "objects/layout.css";
 
 /* 3. Site Header
 /* ---------------------------------------------------------- */
 
-/*COMPONENTS*/
 @import "components/header.css";
-/*@import "components/header-search.css";*/
-/*@import "components/hero-banner.css";*/
 
 /* 4. Site Navigation
 /* ---------------------------------------------------------- */
 
-/*COMPONENTS*/
-/*@import "components/navigation.css";*/
+@import "components/navigation.css";
     
 /* 5. Post Feed
 /* ---------------------------------------------------------- */
  
-/*COMPONENTS*/
 @import "components/posts.css";
-/*@import "components/pagination.css";*/
-    
-/* 6. Single Post
+@import "components/pagination.css";
+   
+/* 6. Subscribe Form
 /* ---------------------------------------------------------- */
 
-/*COMPONENTS*/
-/*@import "components/single-post.css";*/
+@import "components/subscribe-form.css";
 
-/* 6.1. Subscribe Form
+/* 7. Single Post
 /* ---------------------------------------------------------- */
 
-/*COMPONENTS*/
-/*@import "components/subscribe-form.css";*/
+@import "components/single-post.css";
 
-
-/* 6.2. Post Footer
+/* 7.1. Post Footer
 /* ---------------------------------------------------------- */
 
-/*COMPONENTS*/
-/*@import "components/post-footer.css";*/
+@import "components/post-footer.css";
 
-/* 6.3. Comments
+/* 7.2. Related posts
 /* ---------------------------------------------------------- */
 
-/*COMPONENTS*/
-/*@import "components/comments.css";*/
+@import "components/related-posts.css";
 
-/* 6.4. Related posts
+/* 7.3. Comments
 /* ---------------------------------------------------------- */
 
-/*COMPONENTS*/
-/*@import "components/related-posts.css";*/
+@import "components/comments.css";
 
-/* 6.5. Floating Header
+/* 8. Sidebar Template
 /* ---------------------------------------------------------- */
 
-/*COMPONENTS*/
-/*@import "components/floating-header.css";*/
-
-/* 7. Sidebar Template
-/* ---------------------------------------------------------- */
-
-/*COMPONENTS*/
 @import "components/sidebar.css";
-/*@import "components/widget.css";*/
 
-/* 8. Author Template
+/* 9. Author Template
 /* ---------------------------------------------------------- */
 
-/*COMPONENTS*/
-/*@import "components/author.css";*/
+@import "components/author.css";
 
-/* 9. Error Template
+/* 10. Error Template
 /* ---------------------------------------------------------- */
 
-/*COMPONENTS*/
-/*@import "components/error.css";*/
+@import "components/error.css";
 
-/* 10. Site Footer
+/* 11. Site Footer
 /* ---------------------------------------------------------- */
 
-/*COMPONENTS*/
 @import "components/footer.css";
-
-
-/*UTILITIES*/
 @import "utilities/utilities.css";
-
 
 
