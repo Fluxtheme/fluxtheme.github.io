@@ -21,7 +21,7 @@
     --link-color: hsl(201, 85%, 59%);
     --hovered-link-color: hsl(201, 85%, 59%);
     --meta-background: hsl(40, 32%, 62%);
-    
+
     --blue: #3eb0ef;
     --green: #a4d037;
     --purple: #ad26b4;
@@ -37,8 +37,8 @@
     --brown: #a3821a;
     --midbrown: #BDA87F;
     --lightbrown: #E6C55D;
-    
-    --font-body: 'Lora', serif;
+
+    --font-body: 'Open Sans', sans-serif;
     --font-heading: 'Raleway', sans-serif;
 }
 
